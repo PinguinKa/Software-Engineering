@@ -1,0 +1,155 @@
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 25px;
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%
+
+}
+
+.table {
+    z-index: 1;
+}
+
+th, td:first-child {
+    background: #ffc0cb;
+    color: black;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+th, td {
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: white;
+}
+
+td {
+    background: #fff0f5;
+}
+
+th:first-child, td:first-child {
+    text-align: center;
+    font-weight: bold;
+}
+
+.delete {
+    border: 0;
+    background: none;
+    text-align: left;
+}
+
+.window {
+    max-width: 500px;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    background: #fff0f5
+}
+.input {
+    margin: right;
+    text-align: left;
+}
+
+.inputLine {
+    width: 97%;
+    height: 30px;
+    font-size: 25px;
+}
+
+.deleteWindow {
+    border: 3px solid #ffc0cb;
+    background:rgba(0,0,0,.7);
+    font-size: 25px;
+    margin: 0;
+    position: absolute;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 4
+
+}
+
+.addWindow {
+    border: 3px solid #ffc0cb;
+    margin: 0;
+    position: absolute;
+    font-size: 25px;
+    width: 420px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 3
+}
+
+#overlay {
+    color:#fff;
+    background:rgba(0,0,0,0.7);
+    position:fixed;
+    top:-3%;
+    bottom:0%;
+    left:-1%;
+    right:0%;
+    width:100%;
+    height:100%;
+    z-index: 2;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 3px;
+    width: 1px;
+    height: 1px;
+    opacity: 0.3;
+}
+.close:hover {
+    opacity: 1;
+}
+.close:before, .close:after {
+    position: absolute;
+    left: 5px;
+    content: ' ';
+    height: 30px;
+    width: 3px;
+    background-color: #333;
+}
+.close:before {
+    transform: rotate(45deg);
+}
+.close:after {
+    transform: rotate(-45deg);
+}
+
+
+
+.addButton, .deleteButton, .editButton, .hideButton, .submit {
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 10px 0px 10px 0px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #ffc0cb;
+}
+
+
+.addButton:hover, .deleteButton:hover, .editButton:hover, .hideButton:hover, .submit:hover {
+    background-color: #ffc0cb;
+}
+
+
+form {
+    display: block;
+}
+
+
+.

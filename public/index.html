@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Table of Students</title>
+    <link rel='stylesheet' href="files/style.css">
+
+</head>
+
+
+<body>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th class="name">ФИО</th>
+                <th class="date">Дата рождения</th>
+                <th class="email">Эл. почта</th>
+                <th class="id">ID</th>
+                <th width="320"><button type="button" class="addButton" value="Добавить">Добавить</button></th>
+            </tr>
+        </thead>
+        <tbody id="table">
+        </tbody>
+    </table>
+
+    <button type="button" class="addButton" value="Добавить">Добавить</button>
+
+
+    <div class="addWindow" id="addWindow" style="display: none;">
+        <span class="close" data-id="edit"> </span>
+        <div class="window">
+            <b><br>ВВЕДИТЕ <br> ПОЛЬЗОВАТЕЛЯ</b> <br><br>
+            <div class="input">
+                <form>
+                    <input type="hidden" id="Id" value="-1">
+
+                    <label for="name" >ФИО:</label><br>
+                    <input  id="name" class="inputLine" type="text"   placeholder="Мельникова К.В." /><br><br>
+
+                    <label for="date" >Дата рождения:</label><br>
+                    <input  id="date" class="inputLine" type="date"   placeholder="2003-03-23" /><br><br>
+
+                    <label for="email">E-mail:</label><br>
+                    <input  id="email" class="inputLine" type="email"  placeholder="melnikova.karina2003@yandex.ru"/><br><br>
+
+                    <label for="id" >ID:</label><br>
+                    <input  id="id" class="inputLine" type="number" placeholder="123456789" /><br><br>
+                </form>
+            </div>
+            <button type="button" class="submit" value="ОК" data-func="submit">ОК</button>
+        </div>
+    </div>
+
+
+    <div class="deleteWindow" id="deleteWindow" style="display: none;">
+        <span class="close"></span>
+        <div class="window" >
+            <br>
+            Вы действительно хотите удалить этого пользователя?    <br><br>
+            <button type="button" class="submit" value="Да" data-func="remove">Да</button>
+
+            <button type="button" class="hideButton" data-id="remove">Нет</button>
+        </div>
+    </div>
+
+
+    <div id="overlay" class="hideButton" style="display: none;"> </div>
+
+    <script src="files/script.js"></script>
+
+</body>
+</html>
